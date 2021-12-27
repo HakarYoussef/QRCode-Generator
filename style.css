@@ -1,0 +1,65 @@
+/* color variables*/
+:root {
+  --color-primary: rgb(207, 206, 211);
+  --color-secondary: rgb(232, 238, 234);
+  --text-color: rgb(40, 41, 40);
+  --btn-color: rgb(86, 72, 141);
+}
+
+body {
+  margin: 0;
+  height: 120vh;
+  width: 100%;
+  background-color: var(--color-primary);
+}
+
+form {
+  width: 25rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 2rem auto;
+  padding: 1em;
+  background-color: var(--color-secondary);
+  border-radius: 25px;
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+input {
+  background-color: var(--color-primary);
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  height: 50px;
+  width: 20rem;
+  outline: none;
+}
+
+label {
+  color: var(--text-color);
+  padding: 0.5rem;
+}
+
+input[type='submit'] {
+  background-color: var(--btn-color);
+  color: #fff;
+  cursor: pointer;
+}
+
+input[type='color'] {
+  background: none;
+}
+
+#qr-code-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
